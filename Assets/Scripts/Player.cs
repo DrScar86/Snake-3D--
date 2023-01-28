@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     // в редакторе можно поменять
     public float speed = 6;
     // аналогично скорость вращения 60 градусов в секунду по умолчанию
-    public float rotationSpeed = 60;
+    public float rotationSpeed = 160;
     // локальная переменная для хранения ссылки на компонент CharacterController
     private CharacterController _controller;
     public UnityEvent OnEat;
@@ -61,7 +61,7 @@ public class Player : MonoBehaviour
         _controller.Move(transform.forward * speed * Time.deltaTime /* * vertical*/);
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(5);
         }
     }
     GameObject food;
