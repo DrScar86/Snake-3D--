@@ -11,6 +11,6 @@ public class LoadLevel : MonoBehaviour
     public IEnumerator Start()
     { // задержка на заданное число секунд 
         yield return new WaitForSeconds(delay); // загрузка уровня с указанным именем 
-        SceneManager.LoadScene("Menu4");
+        SceneManager.LoadScene("Menu2");
     }
 }
